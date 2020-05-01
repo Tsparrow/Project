@@ -20,6 +20,9 @@ body{
  background-color: grey;
  font-family: 'Arial Black', sans-serif;
 }
+article{
+    background-color: darkgrey;
+}
 body header{
   background-color: hsl(0, 0%, 20%);
   color: white;
