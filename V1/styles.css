@@ -34,13 +34,13 @@ body footer{
 }
 
 /* Navigation Styles */
-body a:link {
+a:link {
     color: white;
 }
-body a:visited {
+a:visited {
     color: hsl(0, 0%, 60%);
 }
-body a:active, body a:hover {
+a:active, a:hover {
     color: hsl(0, 0%, 30%);
 }
 nav ul{
