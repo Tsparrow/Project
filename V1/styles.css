@@ -32,15 +32,7 @@ body footer{
     background-color: black;
     color: white;
 }
-a:link {
- color: white;
-}
-body a:visited {
-    color: lightgray;
-}
-body a:active, body a:hover {
-    color: darkgray;
-}
+
 /* Navigation Styles */
 nav ul{
   background-color: hsl(0, 0%, 40%);
@@ -56,7 +48,15 @@ nav a:hover, nav a:active {
   color: hsl(0, 0%, 50%);
   background-color: hsl(0, 0%, 20%);
 }
-
+body a:link {
+    color: white;
+}
+body a:visited {
+    color: lightgray;
+}
+body a:active, body a:hover {
+    color: darkgray;
+}
 /* Section Styles */
 
 
