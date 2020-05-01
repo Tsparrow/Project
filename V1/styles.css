@@ -52,10 +52,10 @@ body a:link {
     color: white;
 }
 body a:visited {
-    color: lightgray;
+    color: hsl(0, 0%, 60%);
 }
 body a:active, body a:hover {
-    color: darkgray;
+    color: hsl(0, 0%, 30%);
 }
 /* Section Styles */
 
