@@ -20,11 +20,11 @@ body{
  background-color: grey;
  font-family: 'Arial Black', sans-serif;
 }
-header#top{
+body header{
   background-color: hsl(0, 0%, 20%);
   color: white;
 }
-footer{
+body footer{
     background-color: black;
     color: white;
 }
