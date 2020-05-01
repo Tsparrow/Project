@@ -34,6 +34,15 @@ body footer{
 }
 
 /* Navigation Styles */
+body a:link {
+    color: white;
+}
+body a:visited {
+    color: hsl(0, 0%, 60%);
+}
+body a:active, body a:hover {
+    color: hsl(0, 0%, 30%);
+}
 nav ul{
   background-color: hsl(0, 0%, 40%);
   list-style-type: none;
@@ -48,15 +57,7 @@ nav a:hover, nav a:active {
   color: hsl(0, 0%, 50%);
   background-color: hsl(0, 0%, 20%);
 }
-body a:link {
-    color: white;
-}
-body a:visited {
-    color: hsl(0, 0%, 60%);
-}
-body a:active, body a:hover {
-    color: hsl(0, 0%, 30%);
-}
+
 /* Section Styles */
 
 
