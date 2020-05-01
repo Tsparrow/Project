@@ -30,7 +30,7 @@ body p{
 }
 /* Navigation Styles */
 nav ul{
-
+  background-color: hsl(0, 0%, 40%);
 }
 nav a:link, nav a:visited {
   color: white;
