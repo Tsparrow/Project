@@ -24,11 +24,6 @@ header{
   background-color: hsl(0, 0%, 20%);
   color: white;
 }
-
-body p{
-  font-size: 1.1em;
-  text-align: center;
-}
 /* Navigation Styles */
 nav ul{
   background-color: hsl(0, 0%, 40%);
