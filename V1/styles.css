@@ -20,7 +20,7 @@ body{
  background-color: grey;
  font-family: 'Arial Black', sans-serif;
 }
-article{
+body article{
     background-color: darkgrey;
 }
 body header{
