@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*
+    CIS 155 12126
+    CIS 155 Quarter Project
+    
+    Choose Your Own Adventure Style Sheet
+    Author: True Sparrow
+    Date: 5.1.2020  
+   
+   Filename: ph_styles.css
+
+*/
+
+
+/* Structural Styles */
+html{
+  background-color: hsl(91, 8%, 56%);
+}
+body{
+ background-color: lightgrey;
+ font-family: 'Arial Black', sans-serif;
+}
+header{
+  background-color: hsl(0, 0%, 20%);
+}
+
+body p{
+  font-size: 1.1em;
+  text-align: center;
+}
+/* Navigation Styles */
+nav ul{
+
+}
+nav a:link, nav a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 40%);
+
+}
+nav a:hover, nav a:active {
+  color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 20%);
+}
+
+/* Section Styles */
+
+
+
+
+/* Definition List Styles */
