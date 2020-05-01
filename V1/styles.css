@@ -21,7 +21,8 @@ body{
  font-family: 'Arial Black', sans-serif;
 }
 body article{
-    background-color: darkgrey;
+    background-color: hsl(0, 0%, 20%;
+    color: white;
 }
 body header{
   background-color: hsl(0, 0%, 20%);
@@ -31,9 +32,19 @@ body footer{
     background-color: black;
     color: white;
 }
+a:link {
+ color: white;
+}
+a:visited {
+    color: lightgray;
+}
+a:active, a:hover {
+    color: darkgray;
+}
 /* Navigation Styles */
 nav ul{
   background-color: hsl(0, 0%, 40%);
+  list-style-type: none;
 }
 nav a:link, nav a:visited {
   color: white;
