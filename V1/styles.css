@@ -24,6 +24,10 @@ header#top{
   background-color: hsl(0, 0%, 20%);
   color: white;
 }
+footer{
+    background-color: black;
+    color: white;
+}
 /* Navigation Styles */
 nav ul{
   background-color: hsl(0, 0%, 40%);
