@@ -14,21 +14,24 @@
 
 /* Structural Styles */
 html{
-  background-color: hsl(black);
+    background-color: hsl(black);
 }
 body{
- background-color: grey;
- font-family: 'Arial Black', sans-serif;
+    background-color: grey;
+    font-family: 'Arial Black', sans-serif;
 }
 body article{
+    background-color: rgb(51, 51, 51);
     background-color: hsl(0, 0%, 20%);
     color: white;
 }
 body header{
-  background-color: hsl(0, 0%, 20%);
-  color: white;
+    background-color: rgb(51, 51, 51);
+    background-color: hsl(0, 0%, 20%);
+    color: white;
 }
 body footer{
+    background-color: rgb(51, 51, 51);
     background-color: hsl(0, 0%, 20%);
     color: white;
 }
@@ -44,18 +47,17 @@ a:active, a:hover {
     color: hsl(0, 0%, 30%);
 }
 nav ul{
-  background-color: hsl(0, 0%, 40%);
-  list-style-type: none;
+    background-color: hsl(0, 0%, 20%);
+    list-style-type: none;
 }
 nav a:link, nav a:visited {
-  color: white;
-  text-decoration: none;
-  background-color: hsl(0, 0%, 40%);
-
+    color: white;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 20%);
 }
 nav a:hover, nav a:active {
-  color: hsl(0, 0%, 80%);
-  background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 10%);
 }
 
 /* Section Styles */
