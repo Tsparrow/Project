@@ -23,18 +23,8 @@ html{
 body{
     background-color: grey;
 }
-body article{
-    background-color: rgb(51, 51, 51);
-    background-color: hsl(0, 0%, 20%);
-    color: white;
-    padding-top: 10px;
-    margin-left: 10em;
-    margin-right: 10em;
-    margin-top: 1em;
-}
-article p{
-    text-indent: 4rem;
-}
+
+
 /* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) 
 In the case of the body header it's precedence as I've deliberately specific as to override the grey back ground and regular font-color with specific colors*/
 body header{
@@ -43,6 +33,7 @@ body header{
     color: white;
 }
 body footer{
+    vertical-align: bottom;
     background-color: rgb(51, 51, 51);
     background-color: hsl(0, 0%, 20%);
     color: white;
@@ -83,8 +74,21 @@ footer a:hover, footer a:active {
 }
 
 /* Section Styles */
-
-
+article p{
+    text-indent: 4rem;
+}
+body article{
+    background-color: rgb(51, 51, 51);
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    padding-top: 10px;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 1em;
+}
+body article section{
+    text-align: center
+}
 
 
 /* Definition List Styles */
