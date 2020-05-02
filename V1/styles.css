@@ -28,8 +28,8 @@ body article{
     background-color: hsl(0, 0%, 20%);
     color: white;
     padding-top: 10px;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 /* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) 
