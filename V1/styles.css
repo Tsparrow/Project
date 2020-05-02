@@ -27,6 +27,7 @@ body article{
     background-color: rgb(51, 51, 51);
     background-color: hsl(0, 0%, 20%);
     color: white;
+    text-indent: 4em;
     padding-top: 10px;
     margin-left: 10em;
     margin-right: 10em;
