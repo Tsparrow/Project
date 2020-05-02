@@ -15,10 +15,10 @@
 /* Structural Styles */
 html{
     background-color: hsl(black);
+    font-family: 'Arial Black', sans-serif;
 }
 body{
     background-color: grey;
-    font-family: 'Arial Black', sans-serif;
 }
 body article{
     background-color: rgb(51, 51, 51);
@@ -56,6 +56,16 @@ nav a:link, nav a:visited {
     background-color: hsl(0, 0%, 20%);
 }
 nav a:hover, nav a:active {
+    color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 10%);
+}
+
+footer a:link, footer a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 20%);
+}
+footer a:hover, footer a:active {
     color: hsl(0, 0%, 80%);
     background-color: hsl(0, 0%, 10%);
 }
