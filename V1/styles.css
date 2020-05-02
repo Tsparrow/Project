@@ -19,6 +19,7 @@ In the case of html it's inheritance as it applies these settings to any part of
 html{
     background-color: hsl(black);
     font-family: 'Arial Black', sans-serif;
+    font-weight: normal;
 }
 body{
     background-color: grey;
