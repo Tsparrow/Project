@@ -67,7 +67,7 @@ nav a:hover, nav a:active {
     background-color: hsl(0, 0%, 10%);
 }
 
-nav ul li:first-of-type{
+li:first-of-type{
     font-weight: bold;
 }
 /* Footer Semi-Nav Styles */
