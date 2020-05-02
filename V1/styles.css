@@ -40,6 +40,10 @@ body footer{
     color: white;
 }
 
+*:empty{
+    background-color: hotpink;
+}
+
 /* Navigation Styles */
 a:link {
     color: white;
@@ -86,10 +90,8 @@ body article{
     margin-left: 10em;
     margin-right: 10em;
     margin-top: 1em;
+    line-height: 1.5rem;
 }
 body article section{
-    text-align: center
+    align: center
 }
-
-
-/* Definition List Styles */
