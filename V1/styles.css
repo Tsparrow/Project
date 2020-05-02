@@ -97,3 +97,6 @@ body article{
 body article section {
     text-align: center;
 }
+section ul{
+    list-style-type: none;
+}
