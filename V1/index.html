@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, describing how the file it is in meets this outcome) -->
 <html lang="en">
     <head>
     <!--
@@ -11,19 +12,22 @@
 
     Filename: index.html
     -->
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"/>
         <title>Home - Choose Your Own Adventure</title>
+        <!-- M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS) -->
         <link href="styles.css" rel='stylesheet' />
     </head>
     <body>
-        <nav>
+        <!-- M1LO12 Create navigation using unordered lists (HTML) -->
+        <nav id="top">
             <ul>
+                <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) Note: this is site navigation -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="map.html">Map</a></li>
             </ul>
         </nav>
-        <header id="top">
+        <header>
             <p>Your Own Adventure</p>
             <a href="Page1.html"><img src="BeginIMGTmp.jpg" alt="Begin Your Adventure"></a>
         </header>
@@ -33,13 +37,18 @@
             <ol>
                 <li>You can go through the adventure (<em>adventure pending</em>)</li>
                 <li>You can read the <a href="about.html">about page</a></li>
+                <!-- M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters) -->
                 <li>You can contemplate how to pronounce the word "Encyclop&aelig;dia"</li>
                 <li><em>... and finally, can you find the secret? (Secret might be pending)</em></li>
             </ol>
 
         </article>
         <footer>
-            <a href="#top">Go to Top</a> | <a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">EURR</a> | <a href="geo:60.173452,24.936264" target="_blank">PROOF (Needs Mobile)</a>
+            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) Note: this is tag based, and will be on all pages. -->
+            <a href="#top">Go to Top</a> 
+            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) Note: this is external-->
+            | <a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">EURR</a> 
+            | <a href="geo:60.173452,24.936264" target="_blank">PROOF (Needs Mobile)</a>
         </footer>
     </body>  
 </html>
