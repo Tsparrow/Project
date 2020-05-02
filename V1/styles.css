@@ -94,7 +94,6 @@ body article{
     margin-top: 1em;
     line-height: 1.5rem;
 }
-body article section ul{
+body article section {
     text-align: center;
-    list-style-type: none;
 }
