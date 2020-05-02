@@ -97,6 +97,6 @@ body article{
 body article section {
     text-align: center;
 }
-section ul{
+section ul li{
     list-style-type: none;
 }
