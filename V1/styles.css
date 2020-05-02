@@ -67,8 +67,8 @@ nav a:hover, nav a:active {
     color: hsl(0, 0%, 80%);
     background-color: hsl(0, 0%, 10%);
 }
-
-nav#top ul li:first-of-type{
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements) */
+nav#top ul li.first-of-type{
     font-weight: bolder;
 }
 /* Footer Semi-Nav Styles */
