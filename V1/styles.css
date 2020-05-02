@@ -56,6 +56,7 @@ a:active, a:hover {
 nav ul{
     background-color: hsl(0, 0%, 20%);
     list-style-type: none;
+    font-size: 3rem;
 }
 nav a:link, nav a:visited {
     color: white;
@@ -67,8 +68,8 @@ nav a:hover, nav a:active {
     background-color: hsl(0, 0%, 10%);
 }
 
-li:first-of-type{
-    font-weight: bold;
+nav ul li:first-of-type{
+    font-weight: bolder;
 }
 /* Footer Semi-Nav Styles */
 footer a:link, footer a:visited {
