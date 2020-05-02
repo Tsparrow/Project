@@ -40,9 +40,7 @@ body footer{
     color: white;
 }
 
-*:empty{
-    background-color: hotpink;
-}
+
 
 /* Navigation Styles */
 a:link {
@@ -68,6 +66,10 @@ nav a:hover, nav a:active {
     background-color: hsl(0, 0%, 10%);
 }
 
+nav ul:first-child{
+    font-weight: bold;
+}
+/* Footer Semi-Nav Styles */
 footer a:link, footer a:visited {
     color: white;
     text-decoration: none;
@@ -93,5 +95,6 @@ body article{
     line-height: 1.5rem;
 }
 body article section{
-    align: center
+    text-align: center;
+    list-style-type: none;
 }
