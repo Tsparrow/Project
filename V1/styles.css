@@ -58,7 +58,7 @@ a:active, a:hover {
 nav ul{
     background-color: hsl(0, 0%, 20%);
     list-style-type: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 nav a:link, nav a:visited {
     color: white;
@@ -102,5 +102,5 @@ section ul li{
     list-style-type: none;
 }
 article::first-letter{
-    font-size: 2em;
+    font-size: 1.5em;
 }
