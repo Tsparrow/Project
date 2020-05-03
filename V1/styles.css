@@ -58,7 +58,7 @@ a:active, a:hover {
 nav ul{
     background-color: hsl(0, 0%, 20%);
     list-style-type: none;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 nav a:link, nav a:visited {
     color: white;
