@@ -17,7 +17,7 @@
 /* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) 
 In the case of html it's inheritance as it applies these settings to any part of the document that isn't more specific*/
 html{
-    background-color:grey;
+    background-color: grey;
     font-family: 'Arial', sans-serif;
     font-weight: normal;
 }
