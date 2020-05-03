@@ -32,7 +32,8 @@ body > header{
     background-color: hsl(0, 0%, 20%);
     color: white;
 }
-/* M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)*/
+/* M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+this is the parent child selector*/
 body > footer{
     /*M2LO12 Demonstrate how CSS can change presentation of page elements (CSS, these are styles that impact page elements rather than impacting text on the page)
     Everything here is page elements except for color as that changes the text color*/
@@ -98,10 +99,12 @@ body > article{
     margin-top: 1em;
     line-height: 1.5rem;
 }
-body > article > section {
+body > article > section.choice {
     text-align: center;
 }
-section li{
+/* M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+this is the parent descendant selector, meaning it doesn't have to be an immediate child/descendant and instead can be below one of the childs*/
+section.choice li{
     list-style-type: none;
 }
 /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements) 
