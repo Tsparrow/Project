@@ -17,6 +17,7 @@
 /* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) 
 In the case of html it's inheritance as it applies these settings to any part of the document that isn't more specific*/
 html{
+    /*M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS)*/
     background-color: grey;
     font-family: 'Arial', sans-serif;
     font-weight: normal;
@@ -24,12 +25,17 @@ html{
 
 /* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) 
 In the case of the body header it's precedence as I've deliberately specific as to override the grey back ground and regular font-color with specific colors*/
-body header{
+body > header{
+    /*M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
+    I put the background in rgb as the older standard and shoul it understand the newer hsl it'll automatically override for the conversion I used this https://www.rapidtables.com/convert/color/hsl-to-rgb.html*/
     background-color: rgb(51, 51, 51);
     background-color: hsl(0, 0%, 20%);
     color: white;
 }
-body footer{
+/* M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)*/
+body > footer{
+    /*M2LO12 Demonstrate how CSS can change presentation of page elements (CSS, these are styles that impact page elements rather than impacting text on the page)
+    Everything here is page elements except for color as that changes the text color*/
     vertical-align: bottom;
     margin-bottom: 0em;
     background-color: rgb(51, 51, 51);
@@ -41,7 +47,7 @@ body footer{
 
 /* Navigation Styles */
 /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements) 
-This is a pseudo class*/
+This is a pseudo class that of course refers to hyperlink states*/
 a:link {
     color: white;
 }
@@ -51,9 +57,10 @@ a:visited {
 a:active, a:hover {
     color: hsl(0, 0%, 30%);
 }
-nav ul{
+nav > ul{
     background-color: hsl(0, 0%, 20%);
     list-style-type: none;
+    /*M2LO13 Demonstrate how CSS can change presentation of textual elements (CSS, these are styles that impact text that is rendered on the page)*/
     font-size: 1.5rem;
 }
 nav a:link, nav a:visited {
@@ -78,10 +85,10 @@ footer a:hover, footer a:active {
 }
 
 /* Section Styles */
-article p{
+article > p{
     text-indent: 3rem;
 }
-body article{
+body > article{
     background-color: rgb(51, 51, 51);
     background-color: hsl(0, 0%, 20%);
     color: white;
@@ -91,12 +98,14 @@ body article{
     margin-top: 1em;
     line-height: 1.5rem;
 }
-body article section {
+body > article > section {
     text-align: center;
 }
-section ul li{
+section li{
     list-style-type: none;
 }
+/* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements) 
+This is a pseudo element that makes it so the first letter of an articleis big.*/
 article::first-letter{
     font-size: 1.5em;
 }
