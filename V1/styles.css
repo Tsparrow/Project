@@ -113,6 +113,6 @@ This is a pseudo element that makes it so the first letter of an articleis big.*
 article::first-letter{
     font-size: 1.5em;
 }
-p#big{
+#big{
     font-size: 1.4em;
 }
