@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, describing how the file it is in meets this outcome) -->
+<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, describing how the file it is in meets this outcome) 
+the html tag below defines the document and therefore is one of the most simple and yet critical tags in this document-->
 <html lang="en">
     <head>
     <!--
@@ -16,19 +17,19 @@
         <!--I have no idea if this a good set of keywords, but they are semi-relevant -->
         <meta name="keywords" content ="adventure, choice, game, story"/>
         <title>Home - Choose Your Own Adventure</title>
-        <!-- M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS) -->
+        <!-- M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS) 
+        this links the external style sheet-->
         <link href="styles.css" rel='stylesheet' />
     </head>
     <body>
 
-
-
-
-        <!-- M1LO12 Create navigation using unordered lists (HTML) -->
-        <!-- I got this idea from Tracy's page if I remember right, but I think it is something most websites should have. I figured out how to do it by reading the book and then implemented it mine, so it's probably not the best way of implementing it. -->
+        <!-- M1LO12 Create navigation using unordered lists (HTML) 
+        This is navigation and it has an unordered list.-->
+        <!--Note: I got the idea from Tracy's page as he showed he had a ack to top button and I didn't have anything better to do for the targeted hyperlink, and it's something a website should probably have. I figured out how to do it by reading the book and then implemented it in mine, so it's probably not the best way of implementing it. -->
         <nav id="top">
             <ul>
-                <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) Note: this is site navigation -->
+                <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)
+                    this is site navigation as you can tell by it being internal html files -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="map.html">Map</a></li>
@@ -45,7 +46,8 @@
             <ol>
                 <li>You can go through the <a href="Page1.html">adventure</a> (<em>adventure pending</em>)</li>
                 <li>You can read the <a href="about.html">about page</a></li>
-                <!-- M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters) -->
+                <!-- M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters) 
+                 the strange ae character isn't a normal character, so I threw this in there for fun even though it has nothing to do with my site-->
                 <li>You can contemplate how to pronounce the word "Encyclop&aelig;dia"</li>
                 <li>You can view the map, which acts as a guide through the pages (once more are implemented)</li>
                 <li><em>... and finally, can you find the secret? (Secret might be pending)</em></li>
@@ -53,11 +55,13 @@
         </article>
         <!--This is the footer which is slightly navigational, but mostly jokes at this point-->
         <footer>
-            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) Note: this is tag based, and will be on all pages. -->
+            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) 
+                this is id targeted, and will be on all pages. -->
             <a href="#top">Go to Top</a> 
-            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) Note: this is external-->
+            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)
+                this is external because it goes to an external url instead of an html document-->
             <!-- M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)
-            this is inline style as it doesn't make sense to tag it for a strange rule in the style sheet, but I also wanted it stand out and draw clicks in contrast to the typical function of it's location-->
+            this is inline style as i wanted it stand out and draw clicks in contrast to the typical function of it's location. To do this I put a style attribute into the anchor. I might do it with a tag later-->
             | <a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">EURR</a> 
             | <a href="geo:60.173452,24.936264" target="_blank">PROOF (Needs Mobile)</a>
         </footer>

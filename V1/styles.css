@@ -15,25 +15,26 @@
 /* Structural Styles */
 
 /* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) 
-In the case of html it's inheritance as it applies these settings to any part of the document that isn't more specific*/
+ This uses inheritance as it applies these settings to any part of the document that doesn't have attributed background color with precedence like the body which is also grey due to it's lack of back-ground color setting*/
 html{
-    /*M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS)*/
+    /*M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS)
+    this changes the background color to grey which then can be overridden by other statements with precedence*/
     background-color: grey;
     font-family: 'Arial', sans-serif;
     font-weight: normal;
 }
 
 /* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) 
-In the case of the body header it's precedence as I've deliberately specific as to override the grey back ground and regular font-color with specific colors*/
+In the case of the body header it's precedence as I've deliberately made it more specific as to override the grey back ground and regular font-color with specific colors*/
 body > header{
     /*M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
-    I put the background in rgb as the older standard and shoul it understand the newer hsl it'll automatically override for the conversion I used this https://www.rapidtables.com/convert/color/hsl-to-rgb.html*/
+    I put the background in rgb as the older standard and should it understand the newer hsl it'll automatically override. For the conversion to rgb in the few I did this way, I used this https://www.rapidtables.com/convert/color/hsl-to-rgb.html*/
     background-color: rgb(51, 51, 51);
     background-color: hsl(0, 0%, 20%);
     color: white;
 }
 /* M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
-this is the parent child selector*/
+this is the parent child selector which selects based on the context of a parent-child relationship*/
 body > footer{
     /*M2LO12 Demonstrate how CSS can change presentation of page elements (CSS, these are styles that impact page elements rather than impacting text on the page)
     Everything here is page elements except for color as that changes the text color*/
@@ -48,7 +49,7 @@ body > footer{
 
 /* Navigation Styles */
 /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements) 
-This is a pseudo class that of course refers to hyperlink states*/
+This is a pseudo class that refers to hyperlink states using :link to refer to it's resting state and the rest for when you interact in various ways*/
 a:link {
     color: white;
 }
@@ -61,7 +62,8 @@ a:active, a:hover {
 nav > ul{
     background-color: hsl(0, 0%, 20%);
     list-style-type: none;
-    /*M2LO13 Demonstrate how CSS can change presentation of textual elements (CSS, these are styles that impact text that is rendered on the page)*/
+    /*M2LO13 Demonstrate how CSS can change presentation of textual elements (CSS, these are styles that impact text that is rendered on the page)
+    font-size changes the font size which of course is as part of textual elements*/
     font-size: 1.5rem;
 }
 nav a:link, nav a:visited {
@@ -99,7 +101,8 @@ body > article{
     margin-top: 1em;
     line-height: 1.5rem;
 }
-/*M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors) Note: this is the class*/
+/*M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors) 
+this is the class one as its using the .choice class*/
 body section.choice {
     text-align: center;
 }
@@ -109,10 +112,12 @@ section.choice li{
     list-style-type: none;
 }
 /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements) 
-This is a pseudo element that makes it so the first letter of an articleis big.*/
+This is a pseudo element that makes it so the first letter of an article is big.*/
 article::first-letter{
     font-size: 1.5em;
 }
+/*M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors) 
+this is the id as it uses the #big is for selection*/
 #big{
     font-size: 1.4em;
 }
