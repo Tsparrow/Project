@@ -14,6 +14,7 @@
 
 /* Structural Styles */
 
+/*Root Inheritance Styling*/
 /* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) 
  This uses inheritance as it applies these settings to any part of the document that doesn't have attributed background color with precedence like the body which is also grey due to it's lack of back-ground color setting*/
 html{
@@ -24,6 +25,7 @@ html{
     font-weight: normal;
 }
 
+/*Header Styling*/
 /* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) 
 In the case of the body header it's precedence as I've deliberately made it more specific as to override the grey back ground and regular font-color with specific colors*/
 body > header{
@@ -33,6 +35,7 @@ body > header{
     background-color: hsl(0, 0%, 20%);
     color: white;
 }
+/*footer styling*/
 /* M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
 this is the parent child selector which selects based on the context of a parent-child relationship*/
 body > footer{
@@ -50,6 +53,7 @@ body > footer{
 /* Navigation Styles */
 /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements) 
 This is a pseudo class that refers to hyperlink states using :link to refer to it's resting state and the rest for when you interact in various ways*/
+/*This sets the default hyperlink style*/
 a:link {
     color: white;
 }
@@ -59,6 +63,7 @@ a:visited {
 a:active, a:hover {
     color: hsl(0, 0%, 30%);
 }
+/* these set the standard nav hyperlink style*/
 nav > ul{
     background-color: hsl(0, 0%, 20%);
     list-style-type: none;
@@ -88,6 +93,7 @@ footer a:hover, footer a:active {
 }
 
 /* Section Styles */
+/*these are the articles formatting portions*/
 article > p{
     text-indent: 3rem;
 }
@@ -101,6 +107,7 @@ body > article{
     margin-top: 1em;
     line-height: 1.5rem;
 }
+/*Below are  formatting related to the choice sectioning*
 /*M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors) 
 this is the class one as its using the .choice class*/
 body section.choice {
@@ -111,8 +118,11 @@ this is the parent descendant selector, meaning it doesn't have to be an immedia
 section.choice li{
     list-style-type: none;
 }
+/*these are somewhat strange ones I added for some of the requirements and to have interesting effects*/
+
 /* M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements) 
 This is a pseudo element that makes it so the first letter of an article is big.*/
+
 article::first-letter{
     font-size: 1.5em;
 }
