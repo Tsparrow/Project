@@ -1,0 +1,195 @@
+@charset "utf-8";
+/*
+    CIS 155 12126
+    CIS 155 Quarter Project
+    
+    Choose Your Own Adventure Style Sheet
+    Author: True Sparrow
+    Date: 5.1.2020  
+   
+   Filename: ph_styles.css
+
+*/
+
+
+/* Structural Styles */
+
+/*Root Inheritance Styling*/
+
+html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+}
+body{
+    margin: 0px;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: gray;
+    height: auto;
+    width: 100%;
+}
+/*Header Styling*/
+body > header{
+    margin-top: 0px;
+    padding-top: 1px;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    text-align: center;
+}
+
+body > header.choice{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(51, 51, 51);
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+
+body > header img{
+    display: block;
+    width: 100%;
+}
+/*Footer styling*/
+body > footer{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 0em;
+    background-image: linear-gradient(hsl(0, 0%, 20%) 0%, hsl(0, 0%, 30%) 20%, hsl(0, 0%, 20%) 80%);
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+/* Navigation Styles */
+nav{
+    float: left;
+    width: 8%;
+
+}
+/*This sets the default hyperlink style*/
+a:link {
+    color: white;
+}
+a:visited {
+    color: hsl(0, 0%, 60%);
+}
+a:active, a:hover {
+    color: hsl(0, 0%, 30%);
+}
+/* these set the standard nav hyperlink style*/
+nav > ul{
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 0em 1em 1em 0em;
+    list-style-type: none;
+    font-size: 1.5rem;
+    line-height: 3rem;
+
+}
+nav a:link, nav a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 20%);
+}
+nav a:hover, nav a:active {
+    color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 10%);
+}
+/* Choice Button Styling */
+li.choice{
+    padding-left: 9%;
+    padding-right: 12%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+li.choice a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+li.choice a:link{
+    background-color: hsl(0, 0%, 20%);
+    border: 10px outset hsl(0, 0%, 30%);
+    color: white;
+}
+li.choice a:hover{
+    color: white;
+    background-color: hsl(0, 0%, 25%);
+    border: 10px outset hsl(0, 0%, 35%);
+    text-shadow: 2px 2px black;
+}
+li.choice a:active{
+    background-color: hsl(0, 0%, 20%);
+    border: 10px inset hsl(0, 0%, 30%);
+    color: white;
+}
+li.choice a:visited{
+    color: gray;
+    background-color: hsl(0, 0%, 20%);
+    border: 10px outset hsl(0, 0%, 30%);
+}
+/* Footer Semi-Nav Styles */
+footer a:link, footer a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 20%,30%);
+}
+footer a:hover, footer a:active {
+    color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 10%);
+}
+
+/* Section Styles */
+/*these are the articles formatting portions*/
+article > p{
+    text-indent: 3rem;
+}
+body > article{
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    width: 80%;
+    background-color: rgb(51, 51, 51);
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+/*Below are  formatting related to the choice sectioning*/
+
+body section.choice {
+    text-align: center;
+}
+
+section.choice li{
+    list-style-type: none;
+}
+/*these are somewhat strange styles I added for some of the requirements and to have interesting effects*/
+
+#red{
+    display: inline;
+    color: red;
+}
+article::first-letter{
+    font-size: 1.5em;
+}
+
+#big{
+    font-size: 1.3em;
+}
