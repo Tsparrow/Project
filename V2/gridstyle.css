@@ -1,0 +1,121 @@
+/*
+    CIS 155 12126
+    CIS 155 Quarter Project V2
+    
+    Choose Your Own Adventure Grid Style Sheet
+    Author: True Sparrow
+    Date: 5.15.2020  
+   
+   Filename: gridstyles.css
+
+   This is because my grid style might be really messy and I want my other CSS to be cleaner
+*/
+
+/* M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
+Thi makes a grid out of a bunch of divs I put in PageNav and then I made it have fancy color for fun afterwards */
+
+/* M3LO8A Demonstrate absolute positioning (CSS, note use in your CSS and describe what its impact is on the HTML)
+I had to put this somewhere and I decided to do it here what it does is make it it fit nicely around the nav and leave open space at the top */
+
+/* this implementation is somewhat based on this guide: https://www.developerdrive.com/how-to-create-a-css-grid-step-by-step/
+but pretty much every parameter has been changed in someway. So it really mostly helped me get around a lot of typing */
+.grid {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    border-radius: 0.5em;
+    width: 80%;
+    height: 80vh;
+    vertical-align: middle;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.c1{
+    background-color: rgb(36, 0, 0);
+}
+.c5{
+    background-color: rgb(72, 0, 0);
+}
+.c9{
+    background-color: rgb(98, 0, 0);
+}
+.c13{
+    background-color: rgb(134, 0, 0);
+}
+.c17{
+    background-color: rgb(170, 0, 0);
+}
+.c21{
+    background-color: rgb(206, 0, 0);
+}
+.c25{
+    background-color: rgb(242, 0, 0);
+}
+.c2{
+    background-color: rgb(0, 36, 0);
+}
+.c6{
+    background-color: rgb(0, 72, 0);
+}
+.c10{
+    background-color: rgb(0, 98, 0);
+}
+.c14{
+    background-color: rgb(0, 134, 0);
+}
+.c18{
+    background-color: rgb(0, 170, 0);
+}
+.c22{
+    background-color: rgb(0, 206, 0);
+}
+.c26{
+    background-color: rgb(0, 242, 0);
+}
+.c3{
+    background-color: rgb(0, 0, 36);
+}
+.c7{
+    background-color: rgb(0, 0, 72);
+}
+.c11{
+    background-color: rgb(0, 0, 98);
+}
+.c15{
+    background-color: rgb(0, 0, 134);
+}
+.c19{
+    background-color: rgb(0, 0, 170);
+}
+.c23{
+    background-color: rgb(0, 0, 206);
+}
+.c27{
+    background-color: rgb(0, 0, 242);
+}
+.c4{
+    background-color: rgb(36, 36, 36);
+}
+.c8{
+    background-color: rgb(72, 72, 72);
+}
+.c12{
+    background-color: rgb(98, 98, 98);
+}
+.c16{
+    background-color: rgb(134, 134, 134);
+}
+.c20{
+    background-color: rgb(170, 170, 170);
+}
+.c24{
+    background-color: rgb(206, 206, 206);
+}
+.c28{
+    background-color: rgb(242, 242, 242);
+}
+.c28 a, .c24 a, .c20 a{
+    color: black;
+}

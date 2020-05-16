@@ -7,14 +7,14 @@
     Author: True Sparrow
     Date: 5.1.2020  
    
-   Filename: ph_styles.css
+   Filename: styles.css
 
 */
 
 
 /* Structural Styles */
 
-/*Root Inheritance Styling*/
+/*below is some root inheritance styling*/
 
 html{
     margin: 0px;
@@ -41,16 +41,24 @@ body > header{
     color: white;
     text-align: center;
 }
+/* M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe what its impact is on the HTML) 
+It makes my thing go up 1% of the viewport, not really necessary, but I like the way it looks*/
 
+/* M4LO3 Demonstrate the use of rounded corners for borders (CSS) 
+This box does indeed have rounded corners*/
 body > header.choice{
     width: 50%;
+    position: relative;
+    top: -1vh;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 1em;
     background-color: rgb(51, 51, 51);
     background-color: hsl(0, 0%, 20%);
     color: white;
     text-align: center;
     font-size: 5rem;
+    padding-top: 0%;
 }
 
 body > header img{
@@ -58,6 +66,12 @@ body > header img{
     width: 100%;
 }
 /*Footer styling*/
+
+/* M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of the three in your CSS and what the impact is on the HTML)
+I made it so the footer stays on the bottom of your screen no matter it's position */
+
+/* M4LO4 Demonstrate the use of gradients (CSS) 
+I made the footer have a gradient to make it slightly more interesting*/
 body > footer{
     text-align: center;
     width: 100%;
@@ -72,10 +86,11 @@ body > footer{
 
 
 /* Navigation Styles */
+/* M3LO2 Demonstrate floating elements (CSS, note where you have specified a floating element and what its impact is)
+    I've floated my Nav menu against the left margin, so it can be on the side easily and change location based on other objects */
 nav{
     float: left;
-    width: 8%;
-
+    width: 8.5%;
 }
 /*This sets the default hyperlink style*/
 a:link {
@@ -105,6 +120,13 @@ nav a:hover, nav a:active {
     color: hsl(0, 0%, 80%);
     background-color: hsl(0, 0%, 10%);
 }
+/* Image Hyperlink Styling */
+
+a#button:active img{ 
+    border: 10px inset hsl(0, 0%, 30%);
+    width: 98.9%;
+    filter: brightness(0.8);
+}
 /* Choice Button Styling */
 li.choice{
     padding-left: 9%;
@@ -124,6 +146,8 @@ li.choice a:link{
     border: 10px outset hsl(0, 0%, 30%);
     color: white;
 }
+/* M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two in your CSS and explain its impact on the HTML)
+I used text shadowing to make it stand out more when you hover over a choice */
 li.choice a:hover{
     color: white;
     background-color: hsl(0, 0%, 25%);
@@ -171,7 +195,10 @@ body > article{
     margin-top: 1rem;
     line-height: 2rem;
 }
-/*Below are  formatting related to the choice sectioning*/
+article img{
+    width: 100%;
+}
+/*Below is formatting related to the choice sectioning*/
 
 body section.choice {
     text-align: center;
@@ -189,7 +216,64 @@ section.choice li{
 article::first-letter{
     font-size: 1.5em;
 }
-
+/* Map Page related formatting*/
+/* M3LO10 Demonstrate an overflow setting (CSS, note explicit use of an overflow setting in your CSS and what the impact is on the HTML)
+I tried to make the map image stay readable on most resolutions by making it scorll instead of shrink smaller and smaller */
+article.maps div{
+    overflow: auto;
+}
+/* M4LO6 Demonstrate the use of opacity/transparency for images (see 4.2) (CSS)
+I used opacity to make a picture invisible and then semi-opaque in order to reduce contarst between it and the background (to save peoples eyes)*/
+a#spoiler img{
+    min-width: 720px;
+    filter: opacity(0);
+}
+a#spoiler:hover img{ 
+    filter: invert(1) opacity(0.5) brightness(2);
+}
+img#map{
+    min-width: 720px;
+    filter: invert(1) opacity(0.5) brightness(2);
+}
+/* This is an override for exclusions*/
+article#nofl::first-letter{
+    font-size: 1em;
+}
 #big{
     font-size: 1.3em;
+}
+#motopic{
+    border-radius: 4em;
+}
+/* M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
+The purpose of this would be to increase compatibility, I'm not really considered with backwards compatibility to that degree as most people use fairly modern versions of browsers. */
+#dapic{
+    padding-top: 15em;
+    padding-bottom: 15em;
+    width: 90%;
+    -webkit-transform: rotate(22.5deg);
+    transform: rotate(22.5deg);
+}
+/* M4LO2 Demonstrate the use of background images (CSS)
+I did this for posterities sake and set a bunch of things that make it look weird, but I also did this with the footer technically */
+#side1{
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+    background-image: url("FlowerBorder.jpg");
+    background-clip: content-box;
+    background-size: contain;
+}
+#side2{
+    width: 10%;
+    right: 0px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+    background-image: url("FlowerBorder.jpg");
+    background-clip: content-box;
+    background-size: contain;
 }
