@@ -1,0 +1,22 @@
+/*
+    CIS 155 12126
+    CIS 155 Quarter Project V2
+    
+    Choose Your Own Adventure Reset Style Sheet
+    Author: True Sparrow
+    Date: 5.15.2020  
+   
+   Filename: resetstyles.css
+
+*/
+/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)
+all of the rules below are reset ones, I based these off of the rules in the book, but removed ones that change the appearance of my webite */
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+address, article, aside, blockquote, body, cite, div, dl, dt, dd, em, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, html, img, li, main, nav, ol, p, section, span, ul {
+    background: transparent;
+    font-size: 100%;
+    vertical-align: baseline;
+}

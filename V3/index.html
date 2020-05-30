@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!--
+    CIS 155 12126
+    CIS 155 Quarter Project
+    
+    Choose Your Own Adventure Home Page
+    Author: True Sparrow
+    Date: 5.1.2020  
+
+    Filename: index.html
+    -->
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content ="adventure, choice, game, story"/>
+        <title>Home - Choose Your Own Adventure</title>
+        <link href="resetstyle.css" rel='stylesheet' />
+        <link href="styles.css" rel='stylesheet' />
+        <link href="mobileStyles.css" rel='stylesheet' />
+    </head>
+    <body>
+        <!--This is the header with an image that acts as your button for entry into the adventure, but also has some text to differentiate pages at this point-->
+        <header id="top">
+            <p>Your Own Adventure</p>
+            <a id="button" href="Page1.html"><img src="BeginIMGTmp.jpg" alt="Begin Your Adventure"></a>
+        </header>
+         <!--Note: I got the 'Back to top' idea from Tracy's page as he showed he had a back to top button and I didn't have anything better to do for the targeted hyperlink, and it's something a website should probably have. I figured out how to do it by reading the book and then implemented it in mine, so it's probably not the best way of implementing it. -->
+         <nav>
+            <ul id="desktop">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Page1.html">Begin</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="PageNav.html">Page Nav</a></li>
+            </ul>
+            <ul id="mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Page1.html">Begin</a></li>
+                <li><a href="#"  class="submenuTitle">Misc</a>
+                    <ul class="submenu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="PageNav.html">Page Nav</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--This is the actual content as far as text goes-->
+        <article>
+            <p id="big">Welcome!</p>
+            <p>From this page you can begin your journey in many ways</p>
+            <ol>
+                <li>You can go through the <a href="Page1.html">adventure</a> (<em>adventure pending</em>)</li>
+                <li>You can read the <a href="about.html">about page</a></li>
+                <li>You can contemplate how to pronounce the word "Encyclop&aelig;dia"</li>
+                <li>You can view the map, which acts as a guide through the pages (once more are implemented)</li>
+                <li>You can view the <a href="loat.html">land of abandoned things</a>, where I'm going to put objectives that I don't actually want to use</li>
+                <li><em>... and finally, can you find the secret? (Secret might be pending)</em></li>
+            </ol>
+        </article>
+        <!--This is the footer which is slightly navigational, but mostly jokes at this point-->
+        <footer>
+            <a href="#top">Go to Top</a> 
+            | <a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">EURR</a> 
+            | <a href="geo:60.173452,24.936264" target="_blank">PROOF (Needs Mobile)</a>
+        </footer>
+    </body>  
+</html>
