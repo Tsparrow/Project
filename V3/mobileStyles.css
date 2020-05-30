@@ -55,7 +55,9 @@ This sadly means 720p monitors get a mobile-optimized experience, and 4k phones 
     }
     body > header.choice{
         width: 100%;
+        border-radius: 2rem;
     }
+    
     body > footer{
         font-size: 1rem;
     }
