@@ -124,8 +124,13 @@ a#button:active img{
     filter: brightness(0.8);
 }
 /* Choice Button Styling */
+ul.choice{
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
 li.choice{
-    padding-left: 9%;
+    padding-left: 12%;
     padding-right: 12%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;

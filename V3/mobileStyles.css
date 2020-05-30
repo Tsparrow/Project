@@ -68,6 +68,6 @@ This sadly means 720p monitors get a mobile-optimized experience, and 4k phones 
         display: none;
     }
     /*Pull Down Menu CSS*/
-    ul.submenu {display: none;}
-    a.submenuTitle:hover+ul.submenu, ul.submenu:hover { display: block;}
+    ul.pulldown {display: none;}
+    a.pulldownTitle:hover+ul.pulldown, ul.pulldown:hover {display: block;}
 }
