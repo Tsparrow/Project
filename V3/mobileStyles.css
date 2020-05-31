@@ -60,7 +60,7 @@ This sadly means 720p monitors get a mobile-optimized experience, and 4k phones 
     body > footer{
         font-size: 1rem;
     }
-    /*changes to mobile nav*/
+    /*switches to mobile nav*/
     #mobile{
         display: block;
     }

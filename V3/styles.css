@@ -125,22 +125,23 @@ a#button:active img{
 }
 /* Choice Button Styling */
 ul.choice{
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
+    list-style-position: outside;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 li.choice{
-    padding-left: 12%;
-    padding-right: 12%;
+    margin: 0px;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 }
 li.choice a{
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2em;
     padding-bottom: 2em;
+    width: 80%;
 }
 li.choice a:link{
     background-color: hsl(0, 0%, 20%);
@@ -238,6 +239,8 @@ caption{
 
 body section.choice {
     text-align: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 section.choice li{
