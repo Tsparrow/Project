@@ -199,8 +199,11 @@ body > article{
 article img{
     width: 100%;
 }
-/*default table formatting*/
 
+
+/*default table formatting*/
+/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
+Most of this is coloring, spacing/text-align, and borders. The most standout portion is the foot which is purple to highlight that Ross is the worst*/
 table{
     background: hsl(0, 0%, 25%);
     border: 0.2rem solid hsl(0, 0%, 10%);
@@ -246,6 +249,8 @@ body section.choice {
 section.choice li{
     list-style-type: none;
 }
+
+
 /*these are somewhat strange styles I added for some of the requirements and to have interesting effects*/
 
 #red{
@@ -255,6 +260,8 @@ section.choice li{
 article::first-letter{
     font-size: 1.5em;
 }
+
+
 /* Map Page related formatting*/
 article.maps div{
     overflow: auto;
@@ -270,6 +277,8 @@ img#map{
     min-width: 720px;
     filter: invert(1) opacity(0.5) brightness(2);
 }
+
+
 /* This is an override for exclusions*/
 article#nofl::first-letter{
     font-size: 1em;

@@ -15,6 +15,8 @@
 /*1440p width is the cut off as this is a common width in vertical format, and is used by phones like the google pixel. 
 This sadly means 720p monitors get a mobile-optimized experience, and 4k phones will be outside of this range, but will be high quality on almost all monitors and phones*/
 
+/*M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+This does all the mobile formatting and kicks in on any screen 1440px wide or less. Reasoning above*/
 @media screen and (max-width: 1440px) {
     nav{
         display: block;
@@ -67,6 +69,8 @@ This sadly means 720p monitors get a mobile-optimized experience, and 4k phones 
     #desktop{
         display: none;
     }
+    /*M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves)
+    there's not really a way to not do this exactly like the book, but what it does is make a hidden nav sub-ul (of class pulldown) appear when you hover over the objects with either the .pulldownTitle or .pulldown class, which in thiscase means itself or it's parent*/
     /*Pull Down Menu CSS*/
     ul.pulldown {display: none;}
     a.pulldownTitle:hover+ul.pulldown, ul.pulldown:hover {display: block;}
