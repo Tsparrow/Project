@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*
+    CIS 155 12126
+    CIS 155 Quarter Project V3
+    
+    Choose Your Own Adventure Mobile Style Sheet
+    Author: True Sparrow
+    Date: 5.29.2020  
+   
+   Filename: mobileStyles.css
+
+   
+*/
+
+/*1440p width is the cut off as this is a common width in vertical format, and is used by phones like the google pixel. 
+This sadly means 720p monitors get a mobile-optimized experience, and 4k phones will be outside of this range, but will be high quality on almost all monitors and phones*/
+
+/*M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+This does all the mobile formatting and kicks in on any screen 1440px wide or less. Reasoning above*/
+@media screen and (max-width: 1440px) {
+    nav{
+        display: block;
+        float: none;
+        width: 100%;
+        border-radius: 0px;
+    }
+    nav a:link, nav a:visited {
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    nav a:hover, nav a:active {
+        color: rgb(140, 140, 160);
+        background-color: transparent;
+    }
+    nav > ul{
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        border-radius: 0em 0em 0em 0em;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    nav ul{
+        list-style: none;
+    }
+    nav li a{
+        padding: 0.5%;
+    }
+    body > header{
+        margin-top: 0px;
+        padding-top: 1px;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        background-color: hsl(0, 0%, 20%);
+        color: white;
+        text-align: center;
+    }
+    body > header.choice{
+        width: 100%;
+        border-radius: 2rem;
+    }
+    body > footer{
+        font-size: 1rem;
+    }
+    /*switches to mobile nav*/
+    #mobile{
+        display: block;
+    }
+    #desktop{
+        display: none;
+    }
+    /*M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves)
+    there's not really a way to not do this exactly like the book, but what it does is make a hidden nav sub-ul (of class pulldown) appear when you hover over the objects with either the .pulldownTitle or .pulldown class, which in thiscase means itself or it's parent*/
+    /*Pull Down Menu CSS*/
+    ul.pulldown {display: none;}
+    a.pulldownTitle:hover+ul.pulldown, ul.pulldown:hover {display: block;}
+}
