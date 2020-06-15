@@ -62,6 +62,13 @@ This does all the mobile formatting and kicks in on any screen 1440px wide or le
     body > footer{
         font-size: 1rem;
     }
+    div#beginText{
+        position: absolute;
+        bottom: 30%;
+        width: 100%;
+        text-align: center;
+        font-size: 5em;
+    }
     /*switches to mobile nav*/
     #mobile{
         display: block;

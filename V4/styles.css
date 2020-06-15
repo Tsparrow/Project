@@ -56,10 +56,22 @@ body > header.choice{
     font-size: 5rem;
     padding-top: 0%;
 }
-
+#beginContainer{
+    width: 100%;
+    position: relative;
+}
 body > header img{
     display: block;
     width: 100%;
+    height: auto;
+}
+div#beginText{
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 8em;
+    color: black;
 }
 /*Added to fix back to top buttons*/
 div#top{
